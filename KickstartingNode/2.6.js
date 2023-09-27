@@ -10,6 +10,11 @@ const person = {
   // meet1:()=> {
   //   console.log("hi I'm " + this.name);
   // },
+
+
+
+
+  
   // meet() {
   //   console.log("hi I'm " + this.name);
   // },

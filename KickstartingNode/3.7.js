@@ -1,6 +1,7 @@
 const arr = [
   "Nitin",
   24,
+  true,
   {
     person: {
       name: "gopi ",
@@ -9,3 +10,10 @@ const arr = [
   },
 ];
 console.log(arr);
+
+// for (let a of arr) {
+//   console.log(a);
+// }
+
+console.log(arr.map((arrays) => "arrays :" + arrays));
+

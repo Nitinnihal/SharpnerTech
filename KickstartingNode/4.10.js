@@ -1,11 +1,11 @@
-// const person = {
-//   name: "Nitin Nihal",
-//   age: 24,
-//   hobbies: ["a", "b", "c"],
-//   greet() {
-//     console.log("hello world !!!");
-//   },
-// };
+const person = {
+  name: "Nitin Nihal",
+  age: 24,
+  hobbies: ["a", "b", "c"],
+  greet() {
+    console.log("hello world !!!");
+  },
+};
 // const printName = (personData) => {
 //   console.log(personData.name);
 // };
@@ -25,7 +25,12 @@ Inside printName, the name property of the person object is accessed and logged 
 
 // ARRAY DESTRUCTURING
 
-const hobbies = ["music", "Reading", "swimming"];
-const [h1, h2, h3] = hobbies;
-console.log(h1, h2, h3);
+const hobbies = ["music", "Reading", "swimming", "xyz", "abc", "pqr"];
+const [h1, h2, h3, ...hRest] = hobbies;
+console.log(h1, h2, h3, hRest);
 console.log(h2, h1, h3);
+
+// RENAMING VARIABLES WHILE DESTRUCTURING
+
+const { name: personName, age: personAge } = person; // we have renamed the properies of person object while destructuring it.
+console.log(personName);
